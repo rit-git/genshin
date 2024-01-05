@@ -1,0 +1,11 @@
+model:
+  blip: blip2-flan-t5-xl
+  sam: /home/01052711/fache/segment-anything/checkpoints/sam_vit_h_4b8939.pth
+
+server:
+  port: 13244
+
+hydra:
+  run:
+    dir: /tmp/hydra/${now:%Y-%m-%d}/${now:%H-%M-%S}/outputs
+  output_subdir: /tmp/hydra/${now:%Y-%m-%d}/${now:%H-%M-%S}
